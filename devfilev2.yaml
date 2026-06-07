@@ -30,7 +30,7 @@ components:
             targetPort: 9080
         env:
           - name: ZCON_DESIGNER_PROJECT
-            value: /projects/petstore-api/start
+            value: /projects/petstore-api
           - name: zosconnect_remote_download_allowlist
             value: BLOCK_ALL
         image: 'icr.io/zosconnect/ibm-zcon-designer:3.0.103'
