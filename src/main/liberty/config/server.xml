@@ -1,5 +1,19 @@
-<server description="z/OS Connect Server">
-  <featureManager>
-    <feature>zosconnect:zosConnect-3.0</feature>
-  </featureManager>
+<?xml version="1.0" encoding="UTF-8" ?>
+<server description="CICS configuration">
+    <featureManager>
+        <feature>zosconnect:cics-1.0</feature>
+    </featureManager>
+
+    <zosconnect_cicsIpicConnection id="cicsConn_var" host="{$CICS_HOST}" port="{$CICS_PORT}" authDataRef="cicsCredentials"/>
+    
+    <zosconnect_cicsIpicConnection id="cicsConnA" host="9.1.2.123" port="1110" connectionRetryInterval=60s/>
+
+    <zosconnect_cicsIpicConnection id="cicsConnB" host="9.1.2.345" port="1111" connectionRetryInterval=60s/>
+
+    <zosconnect_cicsIpicConnection id="cicsConnC" host="9.1.2.678" port="1112" connectionRetryInterval=60s/>
+
+
+    <zosconnect_authData id="cicsCredentials" user="{$CICS_USER}" password="{$CICS_PASSWORD}"/>
 </server>
+
+<!-- https://www.ibm.com/docs/en/zos-connect/3.0.0?topic=configuring-configuration-settings  -->
