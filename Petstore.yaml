@@ -72,7 +72,7 @@ paths:
           description: Pet not found
         '422':
           description: Validation exception
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -115,7 +115,7 @@ paths:
           description: Invalid input
         '422':
           description: Validation exception
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -161,7 +161,7 @@ paths:
                   $ref: '#/components/schemas/Pet'
         '400':
           description: Invalid status value
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -204,7 +204,7 @@ paths:
                   $ref: '#/components/schemas/Pet'
         '400':
           description: Invalid tag value
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -243,7 +243,7 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Pet not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -290,7 +290,7 @@ paths:
                 $ref: '#/components/schemas/Pet'
         '400':
           description: Invalid input
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -325,7 +325,7 @@ paths:
           description: Pet deleted
         '400':
           description: Invalid pet value
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -373,7 +373,7 @@ paths:
           description: No file uploaded
         '404':
           description: Pet not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -400,7 +400,7 @@ paths:
                 additionalProperties:
                   type: integer
                   format: int32
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -437,7 +437,7 @@ paths:
           description: Invalid input
         '422':
           description: Validation exception
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -472,7 +472,7 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Order not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -499,7 +499,7 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Order not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -534,7 +534,7 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/User'
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -564,7 +564,7 @@ paths:
             application/xml:
               schema:
                 $ref: '#/components/schemas/User'
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -613,7 +613,7 @@ paths:
                 type: string
         '400':
           description: Invalid username/password supplied
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -630,7 +630,7 @@ paths:
       responses:
         '200':
           description: successful operation
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -664,7 +664,7 @@ paths:
           description: Invalid username supplied
         '404':
           description: User not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -702,7 +702,7 @@ paths:
           description: bad request
         '404':
           description: user not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
@@ -728,7 +728,7 @@ paths:
           description: Invalid username supplied
         '404':
           description: User not found
-        default:
+        '500':
           description: Unexpected error
           content:
             application/json:
