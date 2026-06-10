@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<server description="Db2 configuration">
-    <featureManager>
-        <feature>zosconnect:db2-1.0</feature>
-    </featureManager>
-    <zosconnect_credential user="TESTE" password="passs" id="commonCredentials" />
-    <zosconnect_db2Connection id="db2Conn" host="host" port="5000" credentialRef="commonCredentials" />
-</server>

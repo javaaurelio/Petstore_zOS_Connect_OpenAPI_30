@@ -1,5 +1,0 @@
----
-version: "1.0"
-response_500.yaml:
-  condition: true
-  httpStatusCode: 500
