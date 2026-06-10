@@ -2,7 +2,7 @@ schemaVersion: 2.3.0
 metadata:
   name: petstore-api
 attributes:
-  controller.devfile.io/storage-type: ephemeral
+  controller.devfile.io/storage-type: per-user
 projects:
   - git:
       checkoutFrom:
